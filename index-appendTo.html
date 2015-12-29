@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title>appendTo</title>
+    <!--将一个元素的内容动态插入另一个元素中-->
+    <script src="Js/jquery-2.1.4.js"></script>
+    <style>
+        body{
+            font-size: 13px;
+        }
+        img{
+            border: solid 1px #ccc;
+            padding: 3px;
+            margin: 5px;
+            width: 200px;
+            height: 200px;
+        }
+    </style>
+    <script>
+        $(function(){
+            $("img").appendTo($("span"));
+        });
+    </script>
+</head>
+<body>
+<img src="img/1.jpg" title="这是第一幅图片"/>
+<span> <img src="img/2.jpg" title="这是第二幅图片"/></span>
+</body>
+</html>

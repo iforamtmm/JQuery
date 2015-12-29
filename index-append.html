@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title>内部插入节点</title>
+    <script src="Js/jquery-2.1.4.js"></script>
+    <style>
+        body{
+            font-size: 13px;
+        }
+    </style>
+    <script>
+        $(function(){
+           $("div").append(div());
+            function div(){
+                var Str="<b>我是一个被插入的B标签</b>";
+                return Str;
+            }
+        });
+    </script>
+</head>
+<body>
+<div>
+    jQuery
+</div>
+</body>
+</html>

@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title>遍历元素</title>
+    <script src="Js/jquery-2.1.4.js"></script>
+    <style>
+        img{
+            width: 200px;
+            height: auto;
+        }
+    </style>
+    <script>
+        $(function(){
+                $("img").each(function(index){
+                    this.title="第"+index+"幅图片,alt内容是："+this.alt;
+                });
+                    $("img").on("click",function(){
+                    var val=$(this).attr("title");
+                    $("p").text(val);
+            });
+        });
+    </script>
+</head>
+<body>
+<img src="img/1.jpg" alt="第0幅图片">
+<img src="img/2.jpg" alt="第1幅图片">
+<img src="img/3.jpg" alt="第2幅图片">
+<p></p>
+</body>
+</html>

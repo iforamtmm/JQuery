@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title>replaceWith and replaceAll</title>
+    <script src="Js/jquery-2.1.4.js"></script>
+    <style>
+        body{
+            font-size: 13px;
+        }
+        div{
+            border: solid 1px #666;
+            background-color: #ffffff;
+            padding: 5px;
+            margin: 5px;
+            width: 200px;
+            height: auto;
+        }
+    </style>
+    <script>
+        $(function(){
+            $("#span1").replaceWith("<span title='name'>周佳缘</span>");
+            $("<span title='E-mail'>zjy870122@163.com</span>").replaceAll("#span2")
+        });
+    </script>
+</head>
+<body>
+<div>姓名：<span id="span1"></span></div><br/>
+<div>邮箱：<span id="span2"></span></div>
+</body>
+</html>

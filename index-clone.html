@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title>clone()-复制元素节点</title>
+    <script src="Js/jquery-2.1.4.js"></script>
+    <style>
+        img{
+            border: solid 1px #666;
+            padding: 5px;
+            margin: 5px;
+            width: 200px;
+            height: 200px;
+        }
+    </style>
+    <script>
+        $(function(){
+            $("img").click(function(){
+                $(this).clone().appendTo("div");
+//                clone(true),如果不加true,测不会把方法也复制过去。
+            });
+        });
+    </script>
+</head>
+<body>
+<div><img src="img/1.jpg" title="第一副图片"/></div>
+</body>
+</html>
